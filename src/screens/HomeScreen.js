@@ -1,9 +1,9 @@
 import React from 'react';
 import './HomeScreen.css';
-import NavBar from './NavBar';
-import Banner from './Banner';
-import Row from './Row';
-import requests from './Requests';
+import NavBar from '../NavBar';
+import Banner from '../Banner';
+import Row from '../Row';
+import requests from '../Requests';
 function HomeScreen() {
     return (
         <div className="homeScreen">
@@ -30,9 +30,6 @@ function HomeScreen() {
             />
             <Row title="ROMANCE MOVIES" 
                 fetchUrl={requests.fetchRomanceMovies}
-            />
-            <Row title="DOCUMANTARIES" 
-                fetchUrl={requests.fetchDocumentaries}
             />
         </div>
     )
